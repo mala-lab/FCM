@@ -7,16 +7,19 @@ Comprehensive experiments on five datasets demonstrate that FCM gains good recal
 ![Description of Image](https://github.com/mala-lab/FCM/blob/main/flow.png)
 
 ## Get Started
-1. Install Python 3.9.13, PyTorch 1.11.0.
-2. Download data. You can obtain two benchmarks from Google Cloud. The datasets are well pre-processed. For the SWaT dataset, you can apply for it by following its official tutorial. We unify the SWaT dataset to minute granularity and retain only continuous metrics:
-3. Train and evaluate. You can reproduce the experiment results as follows:
-```bash
-bash ./script/run.sh
+
+1. Install Python 3.7 and necessary dependencies.
+```
+pip install -r requirements.txt
+```
+2. Download data. You can obtain all datasets from [[Times-series-library](https://github.com/thuml/Time-Series-Library)]. The downloaded data needs to add the sampling time, and we provide the relevant code in the folder `./data_process`. In addition, we also provide the processed MSL dataset in `./dataset`.
+
+3. Anomaly Prediction task.
+ 
+We provide the anomaly Prediction experiments and the experiment scripts can be found under the folder `./scripts`. To run the code on MSL, just run the following command:
+
+```
+sh ./scripts/MSL.sh
 ```
 
 
-## Main Result
-
-
-
-![Uploading image.png…]()
